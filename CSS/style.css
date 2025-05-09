@@ -1,0 +1,141 @@
+/* Colors */
+:root {
+    --Pink-Muda: #f8c8dc;
+    --Pink-Utama: #ff69b4;
+    --Pink-Tua: #d04894;
+    --Warna-Teks: #333;
+    --Background: #fff0f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header {
+    background: linear-gradient(var(--Pink-Utama),var(--Pink-Tua));
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    animation: bounce infinite 2s;
+}
+
+@keyframes bounce {
+    0%, 40%, 60% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: white;
+    color: var(--Pink-Tua);
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    color: var(--Pink-Muda);
+}
+
+.search-section {
+    text-align: center;
+}
+
+.search-section h2 {
+    font-size: 1.8rem;
+    margin: 30px 0px 20px 0px;
+}
+
+.search-section .search-form {
+    margin-bottom: 100px;
+}
+
+.search-section .search-form input {
+    width: 10.5rem;
+    padding: 10px ;
+}
+
+.search-section .search-form select {
+    padding: 10px;
+}
+
+.search-section .search-form button {
+    padding: 12px 15px;
+    color: white;
+    background: var(--Pink-Utama);
+    border-radius: 5px;
+    border: none;
+}
+
+.features {
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: minmax(250px,auto) minmax(250px, auto) minmax(250px,auto);
+    margin: 0px 400px 60px 400px;
+}
+
+.features .feature-box{
+    background: var(--Background);
+    margin: 0px 20px;
+    padding: 30px 20px;
+}
+
+.features .feature-box i {
+    font-size: 2rem;
+    color: var(--Pink-Tua);
+    margin-bottom: 20px;
+}
+
+.features .feature-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.features .feature-box p {
+    font-size: 1rem;
+}
+
+.cta {
+    background: var(--Pink-Muda);
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    width: 600px;
+    margin: auto;
+}
+
+footer {
+    background: var(--Pink-Utama);
+    color: white;
+    padding: 20px 0px 12px 0px;
+    text-align: center;
+}
